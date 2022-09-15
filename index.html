@@ -5,31 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Adamant or Not Adamant</title>
+    <title>Photo Editor</title>
 </head>
 <body>
-<!-- <canvas> -->
-<!-- <main class="outer-shell gradient-wrap"> -->
-<button onclick="gradejs()" class="gobutton"> Grayscale </button>
-<div id = "outer" class="outer-shell gradient-wrap">
-<!-- <img src = "grass.jpg"> -->
-</div>
-<!-- </main> -->
+    <button onclick="gradejs()" class="gobutton"> Gradient Background </button>
+    <div id = "outer" class="outer-shell tilt gradient-wrap">
+        <p class = "droptext">Drop photo here</p>
+    </div>
 
-<!-- </canvas> -->
-<button onclick="grayscale()" class="gobutton"> Grayscale </button>
-<button onclick="sepia()" class="gobutton"> Sepia </button>
-<button onclick="invert()" class="gobutton"> Invert </button>
-<button onclick="blog()" class="gobutton"> Blur </button>
-<button onclick="removeAllClasses()" class="gobutton"> Normal </button>
-
+    <button onclick="grayscale()" class="gobutton"> Grayscale </button>
+    <button onclick="sepia()" class="gobutton"> Sepia </button>
+    <button onclick="invert()" class="gobutton"> Invert </button>
+    <button onclick="hue()" class="gobutton"> Hue-rotate(90deg) </button>
+    <button onclick="removeAllClasses()" class="gobutton"> Normal </button>
 
     <script src="grade.js"></script>
-    <!-- <script type="text/javascript">
-        window.addEventListener('load', function(){
-            Grade(document.querySelectorAll('.gradient-wrap'))
-        })
-    </script> -->
     <script src="script.js"></script>
 </body>
 </html>

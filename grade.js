@@ -154,7 +154,7 @@
                     if (ls) {
                         ls.setItem(item_name, JSON.stringify(top));
                         //
-                        ls.removeItem(item_name);
+                        // ls.removeItem(item_name);
                         //
                     }
                 }
