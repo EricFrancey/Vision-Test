@@ -2,6 +2,51 @@ const dropzone = document.getElementById('outer');
 const picture = document.querySelector('img');
 const droptext = document.querySelector('.droptext')
 
+let sizeSlider = document.getElementById("image-size");
+
+sizeSlider.oninput = function() {
+  if (sizeSlider.value == 1) {
+    dropzone.children[0].style.height = "20%";
+    dropzone.children[0].style.width = "20%";
+  }
+  if (sizeSlider.value == 2) {
+    dropzone.children[0].style.height = "40%";
+    dropzone.children[0].style.width = "40%";
+  }
+  if (sizeSlider.value == 3) {
+    dropzone.children[0].style.height = "60%";
+    dropzone.children[0].style.width = "60%";
+  }
+  if (sizeSlider.value == 4) {
+    dropzone.children[0].style.height = "80%";
+    dropzone.children[0].style.width = "80%";
+  }
+  if (sizeSlider.value == 5) {
+    dropzone.children[0].style.height = "100%";
+    dropzone.children[0].style.width = "100%";
+  }
+  if (sizeSlider.value == 6) {
+    dropzone.children[0].style.height = "110%";
+    dropzone.children[0].style.width = "110%";
+  }
+  if (sizeSlider.value == 7) {
+    dropzone.children[0].style.height = "120%";
+    dropzone.children[0].style.width = "120%";
+  }
+  if (sizeSlider.value == 8) {
+    dropzone.children[0].style.height = "130%";
+    dropzone.children[0].style.width = "130%";
+  }
+  if (sizeSlider.value == 9) {
+    dropzone.children[0].style.height = "140%";
+    dropzone.children[0].style.width = "140%";
+  }
+  if (sizeSlider.value == 10) {
+    dropzone.children[0].style.height = "150%";
+    dropzone.children[0].style.width = "150%";
+  }
+}
+
 dropzone.addEventListener('dragenter', event => {
   event.preventDefault();
   dropzone.classList.add('active');
@@ -17,6 +62,7 @@ dropzone.addEventListener('dragover', event => {
 });
 
 dropzone.addEventListener('drop', event => {
+
   event.preventDefault();
   dropzone.classList.remove('active');
 
@@ -31,7 +77,9 @@ dropzone.addEventListener('drop', event => {
     const img = document.createElement('img');
     img.src = reader.result;
     console.log(reader.result);
+    dropzone.removeChild(dropzone.firstElementChild);
     dropzone.append(img);
+    img.classList.add('image-sizing');
  
   //  console.log(dropzone);
 // dropzone.classList.add("dropped");

@@ -1,5 +1,5 @@
 body {
-  background-color:whitesmoke
+  background-color:darkolivegreen;
 }
 
 p {
@@ -15,6 +15,18 @@ button {
   font-size: 24px;
 }
 
+.slider-text {
+margin: 20px;
+}
+
+.faded {
+
+filter:opacity(50%);
+}
+.filters {
+  border: 1px dashed black;
+
+}
 .hidden {
   display: none;
 }
@@ -47,7 +59,7 @@ button {
   border: 1px dashed black;
   width: 800px;
   height: 500px;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 20%;
 
   padding-left: 100px;
@@ -57,7 +69,6 @@ button {
 
   transition: all 1s;
 }
-
 
 .tilt {
   object-position: center center;
