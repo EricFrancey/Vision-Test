@@ -1,0 +1,1 @@
+[LIVE DEMO](https://ericfrancey.github.io/drag-drop-photo-editor/)
