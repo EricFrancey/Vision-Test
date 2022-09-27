@@ -1,5 +1,5 @@
 body {
-  background-color:darkolivegreen;
+  background-color:lightgray;
 }
 
 p {
@@ -9,6 +9,7 @@ p {
 img {
   height: 500px;
   width: 800px;
+  object-fit: contain;
 }
 
 button {
