@@ -1,35 +1,89 @@
 body {
-  background-color:lightgray;
-}
-
-p {
-  margin: 30%
+  height: 97.5vh;
+  background-color:rgb(58, 58, 58);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
-  height: 500px;
-  width: 800px;
+  width: 40rem;
   object-fit: contain;
+  margin-left: 10rem;
+  margin-top: 0.5rem;
+  cursor:none;
 }
 
 button {
   font-size: 24px;
+  z-index: 5;
+}
+
+.droptext {
+  color: rgb(0, 0, 0);
+  margin-left: 30%;
+  margin-top: 30%;
+  margin-bottom: 30%;
+  width: 40%;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.eye-button {
+  position: absolute;
+  top: 16rem;
+}
+
+.gobutton {
+  background-color: black;
+  color: whitesmoke;
+  border: 3px solid white;
+  z-index: 5;
+}
+
+.normal-button {
+  position: absolute;
+  bottom: 0px;
+}
+
+.slider {
+  position: absolute;
+  z-index: 5;
 }
 
 .slider-text {
-margin: 20px;
+  color: whitesmoke;
+  margin-left: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 70%;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  z-index: 5;
 }
 
 .faded {
-
-filter:opacity(50%);
+  filter: opacity(50%);
 }
-.filters {
-  border: 1px dashed black;
 
+.filters {
+  position: absolute;
+  bottom: 100px;
+  width: 100px;
 }
 .hidden {
   display: none;
+}
+
+.intro {
+  color: whitesmoke;
+  margin-left: 15%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 70%;
+  font-family: Verdana, sans-serif;
+  font-size: 18px;
+  z-index: 5;
 }
 
 .grayscale {
@@ -43,37 +97,31 @@ filter:opacity(50%);
 }
 
 .invert {
-  filter:invert(1);
+  filter: invert(1);
   transition: all 1s;
 }
 
 .hue {
-  filter:hue-rotate(90deg);
+  filter: hue-rotate(90deg);
   transition: all 1s;
 }
 
 .active {
-  background-color:darkgrey;
+  background-color: rgb(105, 105, 105);
 } 
 
 .outer-shell {
-  border: 1px dashed black;
-  width: 800px;
-  height: 500px;
-  margin-top: 5%;
-  margin-left: 20%;
-
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 70px;
-  padding-bottom: 70px;
-
+  background-color: rgb(151, 151, 151);
+  position: fixed;
+  width: 80%;
+  height: 100vh;
+  right: 1rem;
+  top: 10rem;
   transition: all 1s;
 }
 
 .tilt {
   object-position: center center;
   opacity: 1;
-  border-radius: 8px;
   cursor: pointer;
 }
