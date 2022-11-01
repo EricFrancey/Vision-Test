@@ -1,7 +1,7 @@
 # Vision Test
 
 ## Live Demo
-[Vision Test](https://ericfrancey.github.io/drag-drop-photo-editor/)
+[Vision Test](https://ericfrancey.github.io/Vision-Test/)
 
 UI built with HTML, CSS, JavaScript.\
 Gradient help by [Ben Howdle](https://github.com/benhowdle89/grade).
